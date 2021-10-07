@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+
+    <!--Responsividade-->
+    <link rel="stylesheet" href="style/responsive.css">
+    
+    <!--OWL CSS para Carrossel-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+
+    <title>NETFLIX CLONE</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img class="logo" src="img/netflix-logo.png" alt="Logo Netflix">
+            <nav> <!--cria menu de navegação-->
+                <a href="#"><b>Início</b></a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Bombando</a>
+                <a href="#">Minha lista</a>                
+            </nav>
+
+        </div>
+    </header>
+    <main>
+        <div class="filme-principal">
+           <div class="container">
+               <h3 class="titulo">BREAKING BAD</h3>
+               <p class="descricao">Ao saber que tem câncer, um professor passa a fabricar metanfetamina pelo futuro da família, mudando o destino de todos.</p>
+               <div class="botoes">               
+                   <button role="button" class="botao1"> <!-- "role" identifica a função de botão, para renderização em mobile ou diferentes navegadores-->
+                    <i class="fas fa-play"></i> <!--ícone de play font awesome-->
+                    <b>Assistir</b>
+                   </button>
+                   <button role="button" class="botao2">
+                    <i class="fas fa-info-circle"></i>
+                    <b>Mais informações</b>
+                   </button> 
+               </div>
+           </div>         
+        </div>
+    </main>
+
+    <!--Carrossel-->
+    <div class="carrossel-filmes">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img class="box-filme" src="img/mini1.jpg" alt="Round 6">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini2.jpg" alt="Ricky & Morty">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini3.jpg" alt="Cruela">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini4.jpg" alt="My Little Pony">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini5.jpg" alt="Space Jam">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini6.jpg" alt="Código de Conduta">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini7.jpg" alt="Free Guy">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini8.jpg" alt="Venom">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini9.jpg" alt="007">
+            </div>
+            <div class="item">
+                <img class="box-filme" src="img/mini10.jpg" alt="Halloween II">
+            </div>            
+        </div>
+        
+    </div>
+
+    <!--JavaScript (FontAwesome p/ ícones e JQuery p/ carrossel). Por convenção, arquivos .js devem ser colocados antes do fechamento do body, após carregar a página-->
+
+    <script src="https://kit.fontawesome.com/0935abc668.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+
+    
+</body>
+</html>

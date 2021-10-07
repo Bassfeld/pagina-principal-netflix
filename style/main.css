@@ -1,0 +1,144 @@
+/*declara variáveis de cor*/
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+/*reset css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*define o limite sendo a borda da caixa*/
+}
+
+/*ELEMENTOS BASE*/
+
+/*define configurações gerais do body*/
+body{
+    background: var(--preto);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+/*configura flexbox do container menu*/
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+/*configura logo*/
+header .logo{
+    height: 30px;
+    margin: 15px 5px;
+}
+
+/*configura links do menu de navegação*/
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+/*muda a cor dos links do menu de navegação*/
+header nav a:hover{
+    color: #fff;
+}
+
+/*FILME PRINCIPAL*/
+
+/*configura caixa do filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url("/img/capa-breaking-bad.jpg"); /*cria película escura sobre imagem de fundo*/
+
+    height: 600px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/*afasta descrição dos botões e do título*/
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/*configura título do filme*/
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/*configura os botões*/
+.botao1{
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: black;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /*identifica o botão ao mudar o cursor*/
+    transition: .1s ease all; /*suaviza a animação de transição*/
+}
+
+.botao2{
+    background-color: rgba(109, 109, 110, 0.7);
+    border: none;
+    border-radius: 5px;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer; /*identifica o botão ao mudar o cursor*/
+    transition: .1s ease all; /*suaviza a animação de transição*/
+}
+
+/*mudança de cor nos botões ao passar o cursor*/
+.botao1:hover{
+    background-color: rgba(253, 253, 253, 0.7);
+    color: black;
+}
+
+.botao2:hover{
+    background-color: rgba(109, 109, 110, 0.5);
+}
+
+/*afasta ícones dos textos dos botões*/
+.botao i{
+    margin-right: 5px;
+}
+
+/*configura margem à esquerda dos containeres*/
+.container{
+    margin-left: 30px;
+}
+
+/*limita largura do container do filme principal*/
+.filme-principal .container{
+    width: 60%;
+}
+
+/*CARROSSEL*/
+
+/*especifica tamanho das imagens dos filmes*/
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+/*define margem entre container filme principal e carrossel*/
+.carrossel-filmes{
+    margin-top: 10px;
+}

@@ -1,0 +1,21 @@
+/*display dos itens em telas c/ até 600px*/
+@media screen and (max-width: 600px) {
+    /*display em colunas dos itens do header*/
+    header .container{
+        display: flex;
+        flex-direction: column; 
+    }
+    /*define margem inferior do botão 1*/
+    .botao1{
+        margin-bottom: 5px;                
+    }
+}
+
+/*display dos itens em telas c/ 1000px*/
+@media screen and (min-width: 1000px){
+    /*limita largura da descrição*/
+    .descricao{
+        width: 60%;
+    }
+    
+}
